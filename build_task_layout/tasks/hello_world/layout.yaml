@@ -1,0 +1,20 @@
+world: {up_axis: z, gravity: [0, 0, -9.81]}
+
+robot:
+  usd: "{NVIDIA_ASSETS}/Isaac/Robots/Franka/franka.usd"
+  prim_path: "/World/Franka"
+  pose: [0, 0, 0, 0, 0, 0]
+
+surfaces:
+  - name: "table"
+    usd: "{NVIDIA_ASSETS}/Isaac/Environments/Simple_Room/Props/table_low.usd"
+    prim_path: "/World/Table"
+    pose: {x: 0.6, y: 0, z: 0, yaw: -1.57}
+    scale: [0.3, 0.3, 0.3]
+
+props:
+  - name: "cube"
+    usd: "{NVIDIA_ASSETS}/Isaac/Props/Blocks/block.usd"
+    prim_path: "/World/Cube"
+    pose: {x: 0.65, y: 0, z: 0.25, yaw: 0}
+    # scale: [2, 2, 2]
